@@ -10,7 +10,7 @@ vim.opt.ignorecase = false				                    -- (do not) ignore case in sea
 vim.opt.mouse = "a"					                          -- allow the mouse to be used in neovim
 vim.opt.pumheight = 10					                      -- pop up menu height (TODO: yet to see what is means)
 vim.opt.showmode = true					                      -- shows (or not) the mode
-vim.opt.showtabline = 2					                      -- always show tabs
+vim.opt.showtabline = 4					                      -- always show tabs
 vim.opt.smartcase = true				                      -- enables smart case (TODO: find out what it is)
 vim.opt.smartindent = true				                    -- make indenting smarter again
 vim.opt.splitbelow = true				                      -- force all horizontal splits to go below the current window
@@ -29,4 +29,7 @@ vim.opt.number = true                                 -- set numbered lines
 vim.opt.relativenumber = false                        -- set relative numbered lines
 vim.opt.numberwidth = 4                               -- set number column width to 4 {default 4}
 vim.opt.signcolumn = "yes"                            -- always show the sign column, otherwise it would shift the text each time
-
+vim.opt.wrap = true                                   -- wraps text (or not)
+vim.opt.scrolloff = 8                                 -- don't know what it does (TODO: find out)
+vim.opt.sidescrolloff = 8                             -- same as above (TODO: find out)
+vim.opt.guifont = "monospace:h15"                                  -- the font used in graphical neovim applications
