@@ -33,3 +33,5 @@ vim.opt.wrap = true                                   -- wraps text (or not)
 vim.opt.scrolloff = 8                                 -- don't know what it does (TODO: find out)
 vim.opt.sidescrolloff = 8                             -- same as above (TODO: find out)
 vim.opt.guifont = "monospace:h15"                                  -- the font used in graphical neovim applications
+
+vim.opt.shortmess:append("c")
