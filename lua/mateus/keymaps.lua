@@ -46,7 +46,7 @@ keymap("i", "jk", "<ESC>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Move next up and down
+-- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-1<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
