@@ -17,7 +17,7 @@ end
 
 -- custom icons
 local kind_icons = {
-   Array = "",
+    Array = "",
     Boolean = "",
     Class = "",
     Color = "",
