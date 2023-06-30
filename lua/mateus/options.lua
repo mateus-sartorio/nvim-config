@@ -34,7 +34,7 @@ local options = {
     wrap = true,                                            -- wraps text (or not)
     scrolloff = 8,                                          -- don't know what it does (TODO: find out)
     sidescrolloff = 8,                                      -- same as above (TODO: find out)
-    guifont = "monospace:h15",                              -- the font used in graphical neovim applications
+    guifont = "JetBrainsMono:h13",                              -- the font used in graphical neovim applications
 }
 
 vim.opt.shortmess:append "c"
