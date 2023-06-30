@@ -8,14 +8,14 @@ telescope.load_extension('media_files')
 local actions = require "telescope.actions"
 
 telescope.setup {
-  defaults = {
+    defaults = {
 
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
 
     mappings = {
-      i = {
+        i = {
         ["<C-n>"] = actions.cycle_history_next,
         ["<C-p>"] = actions.cycle_history_prev,
 
@@ -78,8 +78,8 @@ telescope.setup {
         ["?"] = actions.which_key,
       },
     },
-  },
-  -- pickers = {
+    },
+    -- pickers = {
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
     --   picker_config_key = value,
@@ -87,8 +87,8 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
-  -- },
-  extensions = {
+    -- },
+    extensions = {
     media_files = {
         -- filetypes whitelist
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
@@ -100,5 +100,5 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
-  },
+    },
 }
