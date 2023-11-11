@@ -3,6 +3,7 @@ local servers = {
 	"pyright",
 	"jsonls",
     "clangd",
+    "tsserver"
 }
 
 local settings = {

@@ -12,5 +12,6 @@ require "mateus.gitsigns"
 require "mateus.nvim-tree"
 require "mateus.bufferline"
 require "mateus.toggleterm"
+require "mateus.indent-blankline"
 
-require'nvim-tree'.setup {}
+require "nvim-tree".setup {}
