@@ -12,3 +12,5 @@ require "mateus.gitsigns"
 require "mateus.nvim-tree"
 require "mateus.bufferline"
 require "mateus.toggleterm"
+
+require'nvim-tree'.setup {}

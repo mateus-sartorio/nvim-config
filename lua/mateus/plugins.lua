@@ -87,8 +87,8 @@ return packer.startup(function(use)
     use "lewis6991/gitsigns.nvim"
 
     -- Nvim-tree
-      use "nvim-tree/nvim-tree.lua"
-      use "nvim-tree/nvim-web-devicons"
+    use "nvim-tree/nvim-tree.lua"
+    use "nvim-tree/nvim-web-devicons"
 
     -- Bufferline
     use "akinsho/bufferline.nvim"
