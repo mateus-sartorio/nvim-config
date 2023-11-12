@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/mateus/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/mateus/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/mateus/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mateus/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/mateus/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

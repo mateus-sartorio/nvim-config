@@ -3,7 +3,9 @@ local servers = {
 	"pyright",
 	"jsonls",
     "clangd",
-    "tsserver"
+    "tsserver",
+    "eslint",
+    "prettierd",
 }
 
 local settings = {

@@ -13,5 +13,7 @@ require "mateus.nvim-tree"
 require "mateus.bufferline"
 require "mateus.toggleterm"
 require "mateus.indent-blankline"
+require "mateus.lint"
+require "mateus.formatter"
 
 require "nvim-tree".setup {}

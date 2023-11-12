@@ -100,6 +100,9 @@ return packer.startup(function(use)
     -- Indentation lines
     use { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }
 
+    use "mfussenegger/nvim-lint"
+    use "mhartington/formatter.nvim"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
