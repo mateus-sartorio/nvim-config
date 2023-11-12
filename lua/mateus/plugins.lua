@@ -104,7 +104,48 @@ return packer.startup(function(use)
 	use("mhartington/formatter.nvim")
 
 	-- Status bar
-	use("MunifTanjim/nougat.nvim")
+	-- use("MunifTanjim/nougat.nvim")
+	-- lazy
+	use({
+		"sontungexpt/sttusline",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+		event = { "BufEnter" },
+		config = function(_, opts)
+			require("sttusline").setup({
+				-- statusline_color = "#000000",
+				statusline_color = "StatusLine",
+
+				-- | 1 | 2 | 3
+				-- recommended: 3
+				laststatus = 3,
+				disabled = {
+					filetypes = {
+						-- "NvimTree",
+						-- "lazy",
+					},
+					buftypes = {
+						-- "terminal",
+					},
+				},
+				components = {
+					"mode",
+					"filename",
+					"git-branch",
+					"git-diff",
+					"%=",
+					"diagnostics",
+					"lsps-formatters",
+					"copilot",
+					"indent",
+					"encoding",
+					"pos-cursor",
+					"pos-cursor-progress",
+				},
+			})
+		end,
+	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

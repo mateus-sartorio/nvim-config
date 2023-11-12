@@ -15,7 +15,7 @@ require("mateus.toggleterm")
 require("mateus.indent-blankline")
 require("mateus.lint")
 require("mateus.formatter")
-require("mateus.statusbar")
+-- require("mateus.statusline")
 
 -- Added in here to correct a bug where nvim-tree does not load
 require("nvim-tree").setup({
