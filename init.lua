@@ -17,11 +17,11 @@ require("mateus.lint")
 require("mateus.formatter")
 require("mateus.statusbar")
 
+-- Added in here to correct a bug where nvim-tree does not load
 require("nvim-tree").setup({
 	disable_netrw = true,
 	hijack_netrw = true,
 	open_on_tab = false,
-	auto_close = true,
 	hijack_cursor = false,
 	update_cwd = true,
 	hijack_directories = {
@@ -49,7 +49,6 @@ require("nvim-tree").setup({
 	},
 	view = {
 		width = 30,
-		hide_root_folder = false,
 		side = "left",
 		number = false,
 		relativenumber = false,
