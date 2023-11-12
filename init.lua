@@ -9,7 +9,6 @@ require("mateus.treesitter")
 require("mateus.autopairs")
 require("mateus.comment")
 require("mateus.gitsigns")
-require("mateus.nvim-tree")
 require("mateus.bufferline")
 require("mateus.toggleterm")
 require("mateus.indent-blankline")
@@ -17,4 +16,9 @@ require("mateus.lint")
 require("mateus.formatter")
 require("mateus.statusbar")
 
-require("nvim-tree").setup({})
+local status_ok, nvim_tree = pcall(require, "mateus.nvim-tree")
+if not status_ok then
+	return
+end
+
+nvim_tree.setup({})
