@@ -1,19 +1,20 @@
-require "mateus.options"
-require "mateus.keymaps"
-require "mateus.plugins"
-require "mateus.colorscheme"
-require "mateus.cmp"
-require "mateus.lsp"
-require "mateus.telescope"
-require "mateus.treesitter"
-require "mateus.autopairs"
-require "mateus.comment"
-require "mateus.gitsigns"
-require "mateus.nvim-tree"
-require "mateus.bufferline"
-require "mateus.toggleterm"
-require "mateus.indent-blankline"
-require "mateus.lint"
-require "mateus.formatter"
+require("mateus.options")
+require("mateus.keymaps")
+require("mateus.plugins")
+require("mateus.colorscheme")
+require("mateus.cmp")
+require("mateus.lsp")
+require("mateus.telescope")
+require("mateus.treesitter")
+require("mateus.autopairs")
+require("mateus.comment")
+require("mateus.gitsigns")
+require("mateus.nvim-tree")
+require("mateus.bufferline")
+require("mateus.toggleterm")
+require("mateus.indent-blankline")
+require("mateus.lint")
+require("mateus.formatter")
+require("mateus.statusbar")
 
-require "nvim-tree".setup {}
+require("nvim-tree").setup({})

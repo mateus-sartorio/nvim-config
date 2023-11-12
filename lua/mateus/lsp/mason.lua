@@ -1,11 +1,11 @@
 local servers = {
-    "lua_ls",
+	"lua_ls",
 	"pyright",
 	"jsonls",
-    "clangd",
-    "tsserver",
-    "eslint",
-    "prettierd",
+	"clangd",
+	"tsserver",
+	"eslint",
+	"prettier",
 }
 
 local settings = {
