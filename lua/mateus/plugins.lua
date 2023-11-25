@@ -104,82 +104,14 @@ return packer.startup(function(use)
 	use("mhartington/formatter.nvim")
 
 	-- Status bar
-	-- use("MunifTanjim/nougat.nvim")
-	-- lazy
-	use({
-		"sontungexpt/sttusline",
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
-		event = { "BufEnter" },
-		config = function(_, opts)
-			require("sttusline").setup({
-				-- statusline_color = "#000000",
-				statusline_color = "StatusLine",
+	use("sontungexpt/sttusline")
 
-				-- | 1 | 2 | 3
-				-- recommended: 3
-				laststatus = 3,
-				disabled = {
-					filetypes = {
-						-- "NvimTree",
-						-- "lazy",
-					},
-					buftypes = {
-						-- "terminal",
-					},
-				},
-				components = {
-					"mode",
-					"filename",
-					"git-branch",
-					"git-diff",
-					"%=",
-					"diagnostics",
-					"lsps-formatters",
-					"copilot",
-					"indent",
-					"encoding",
-					"pos-cursor",
-					"pos-cursor-progress",
-				},
-			})
-		end,
-	})
+	-- Dashboard
+	use("nvimdev/dashboard-nvim")
 
-	use({
-		"nvimdev/dashboard-nvim",
-		event = "VimEnter",
-		config = function()
-			require("dashboard").setup({
-				theme = "hyper", --  theme is doom and hyper default is hyper
-				disable_move = false, --  default is false disable move keymap for hyper
-				shortcut_type = "letter", --  shorcut type 'letter' or 'number'
-				change_to_vcs_root = false, -- default is false,for open file in hyper mru. it will change to the root of vcs
-				config = {}, --  config used for theme
-				hide = {
-					statusline = true, -- hide statusline default is true
-					tabline = true, -- hide the tabline
-					winbar = true, -- hide winbar
-				},
-			})
-		end,
-		requires = { "nvim-tree/nvim-web-devicons" },
-	})
+	use("folke/which-key.nvim")
 
 	-- Lua
-	use({
-		"folke/which-key.nvim",
-		config = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 300
-			require("which-key").setup({
-				-- your configuration comes here
-				-- or leave it empty to use the default settings
-				-- refer to the configuration section below
-			})
-		end,
-	})
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
