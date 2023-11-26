@@ -6,7 +6,7 @@ end
 
 -- Added to avoid delay
 vim.o.timeout = true
-vim.o.timeoutlen = 0
+vim.o.timeoutlen = 200
 
 which_key.setup({
 	plugins = {
