@@ -63,6 +63,7 @@ require("formatter").setup({
 				}
 			end,
 		},
+
 		c = {
 			function()
 				return {

@@ -88,3 +88,23 @@ require("nvim-tree").setup({
 		},
 	},
 })
+
+-- This code solves the issue where nvim does not quit if NvimTree is the last buffer open
+local count = 0
+vim.o.confirm = true
+vim.api.nvim_create_autocmd("BufEnter", {
+	group = vim.api.nvim_create_augroup("NvimTreeClose", { clear = true }),
+	callback = function()
+		local layout = vim.api.nvim_call_function("winlayout", {})
+		if
+			layout[1] == "leaf"
+			and vim.api.nvim_buf_get_option(vim.api.nvim_win_get_buf(layout[2]), "filetype") == "NvimTree"
+			and layout[3] == nil
+		then
+			if count > 0 then
+				vim.cmd("quit")
+			end
+			count = count + 1
+		end
+	end,
+})
