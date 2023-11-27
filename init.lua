@@ -1,7 +1,6 @@
 require("mateus.options")
 require("mateus.keymaps")
 require("mateus.plugins")
-require("mateus.colorscheme")
 require("mateus.cmp")
 require("mateus.lsp")
 require("mateus.telescope")
@@ -18,6 +17,10 @@ require("mateus.formatter")
 require("mateus.sttusline")
 require("mateus.dashboard")
 require("mateus.which-key")
+
+-- Those two must be required in that order
+require("mateus.nightfox")
+require("mateus.colorscheme")
 
 -- Added in here to correct a bug where nvim-tree does not load
 require("nvim-tree").setup({
