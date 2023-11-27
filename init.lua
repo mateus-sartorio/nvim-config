@@ -22,6 +22,8 @@ require("mateus.which-key")
 require("mateus.nightfox")
 require("mateus.colorscheme")
 
+require("mateus.mason-null-ls")
+
 -- Added in here to correct a bug where nvim-tree does not load
 require("nvim-tree").setup({
 	disable_netrw = true,
