@@ -112,7 +112,11 @@ return packer.startup(function(use)
 
 	use("folke/which-key.nvim")
 
+	-- Bridges the gap between null-ls and mason
 	use("jay-babu/mason-null-ls.nvim")
+
+	-- For integration with tmux
+	use("christoomey/vim-tmux-navigator")
 
 	-- Lua
 	-- Automatically set up your configuration after cloning packer.nvim
