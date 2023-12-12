@@ -118,6 +118,15 @@ return packer.startup(function(use)
 	-- For integration with tmux
 	use("christoomey/vim-tmux-navigator")
 
+	-- Flutter and Dart support
+	use({
+		"akinsho/flutter-tools.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"stevearc/dressing.nvim", -- optional for vim.ui.select
+		},
+	})
+
 	-- Lua
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
