@@ -50,6 +50,14 @@ require("formatter").setup({
 			require("formatter.filetypes.typescript").prettier,
 		},
 
+		javascriptreact = {
+			require("formatter.filetypes.javascriptreact").prettier,
+		},
+
+		typescriptreact = {
+			require("formatter.filetypes.typescriptreact").prettier,
+		},
+
 		cpp = {
 			function()
 				return {
